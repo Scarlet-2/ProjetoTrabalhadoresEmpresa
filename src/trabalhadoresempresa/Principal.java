@@ -12,7 +12,7 @@ public class Principal extends javax.swing.JFrame {
     private ArrayList trab = new ArrayList();
     private ArrayList femaleWorkers = new ArrayList();
     private AVL listaGrafo = new AVL();
-    
+    private BinaryMinHeap heap = new BinaryMinHeap(16);
     
     public Principal() {
         initComponents();
@@ -88,8 +88,18 @@ public class Principal extends javax.swing.JFrame {
         });
 
         jButton5.setText("Crescente");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
 
         jButton6.setText("Decrescente");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
 
         jButton7.setText("Autores");
 
@@ -161,8 +171,17 @@ public class Principal extends javax.swing.JFrame {
         pegaTrabalhadoras();
         colocarNaAvl();
         inserirQueue();
-        mostrarHeap();
     }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        // Decrescente
+        mostraInverso();
+    }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        // Crescente
+        mostraNaOrdem();
+    }//GEN-LAST:event_jButton5ActionPerformed
 
     public boolean carregar (String filename, ArrayList arr) {
             //Este método carrega no vetor 'arr' ('trab') os objetos serializados,
@@ -191,14 +210,30 @@ public class Principal extends javax.swing.JFrame {
             }
             return true;
     } 
-    
-    private BinaryMinHeap heap = new BinaryMinHeap(16);
-
+ 
     public void mostraTrabalhadoresCadastrados () {     
         //Mostra na tela os trabalhadores cadastrados no ArrayList 'trab'.
         String cad = "";
         for (int i=0; i < trab.size(); i++) {
           cad +=  trab.get(i).toString()+ "\n";
+        }
+        jTextArea2.setText(cad);
+        jTextArea2.setCaretPosition(0);
+    }
+    
+    public void mostraNaOrdem() {
+        String cad = "";
+        for(int i=0; i < femaleWorkers.size(); i++) {
+            cad += femaleWorkers.get(i).toString() + "\n";
+        }
+        jTextArea2.setText(cad);
+        jTextArea2.setCaretPosition(0);
+    }
+    
+    public void mostraInverso() {
+        String cad = "";
+        for(int i=femaleWorkers.size()-1; i >= 0; i--) {
+            cad += femaleWorkers.get(i).toString() + "\n";
         }
         jTextArea2.setText(cad);
         jTextArea2.setCaretPosition(0);

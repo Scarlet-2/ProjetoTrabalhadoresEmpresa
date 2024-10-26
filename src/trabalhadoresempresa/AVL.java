@@ -423,7 +423,7 @@ public class AVL {
         if (raiz != null) {
             posOrdem(raiz.getEsq());
             posOrdem(raiz.getDir());
-            System.out.print(raiz.getDado() + "  ");
+            System.out.print(raiz.getDado() + "\n");
         }
     }
 
@@ -458,7 +458,7 @@ public class AVL {
                 if (noAux.getDir() != null) {
                     f.addLast(noAux.getDir());
                 }
-                System.out.print(noAux.getDado() + "  ");
+                System.out.print(noAux.getDado() + "\n");
             }
         }
     }

@@ -3,16 +3,20 @@ package trabalhadoresempresa;
 import java.io.EOFException;
 import java.io.FileInputStream;
 import java.io.ObjectInputStream;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
+import java.util.*;
 import javax.swing.JOptionPane;
 
 public class Principal extends javax.swing.JFrame {
     private ArrayList trab = new ArrayList();
     private ArrayList femaleWorkers = new ArrayList();
     private AVL listaGrafo = new AVL();
-    private BinaryMinHeap heap = new BinaryMinHeap(16);
+    private PriorityQueue<Trabalhador> queue = new PriorityQueue<Trabalhador>(16, new Comparator<Trabalhador>() {
+        public int compare(Trabalhador o1, Trabalhador o2) {
+            if(o1.getIdade() < o2.getIdade()) return -1;
+            else if(o1.getIdade() == o2.getIdade()) return 0;
+            else return 1;
+        }
+    });
     
     public Principal() {
         initComponents();
@@ -104,6 +108,11 @@ public class Principal extends javax.swing.JFrame {
         jButton7.setText("Autores");
 
         jButton8.setText("Capacitação");
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
 
         jScrollPane1.setAutoscrolls(true);
 
@@ -171,6 +180,8 @@ public class Principal extends javax.swing.JFrame {
         pegaTrabalhadoras();
         colocarNaAvl();
         inserirQueue();
+        jTextArea2.setText("Trabalhadores e Trabalhadoras inseiridos na Heap!\nTrabalhadoras inseridas na AVL! ");
+        jTextArea2.setCaretPosition(0);
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
@@ -182,6 +193,11 @@ public class Principal extends javax.swing.JFrame {
         // Crescente
         mostraNaOrdem();
     }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+        // Capacitação
+        indicarParaCurso();
+    }//GEN-LAST:event_jButton8ActionPerformed
 
     public boolean carregar (String filename, ArrayList arr) {
             //Este método carrega no vetor 'arr' ('trab') os objetos serializados,
@@ -252,8 +268,6 @@ public class Principal extends javax.swing.JFrame {
             Trabalhador temp = (Trabalhador) femaleWorkers.get(i);
             cad += temp.toString()+ "\n";
         }
-//        jTextArea2.setText(cad);
-//        jTextArea2.setCaretPosition(0);
     }
     
     private void orderWoman(ArrayList lista) {
@@ -269,18 +283,23 @@ public class Principal extends javax.swing.JFrame {
         for(int i=0; i < femaleWorkers.size(); i++) {
             listaGrafo.insereAVL(femaleWorkers.get(i));
         }
-//        jTextArea2.setText(listaGrafo.emOrdem());
-//        jTextArea2.setCaretPosition(0);
     }
     
     private void inserirQueue() {
         for(int i=0; i < trab.size(); i++) {
-            heap.insert((Trabalhador)trab.get(i));
+            queue.add((Trabalhador)trab.get(i));
         }
     }
-    
-    private void mostrarHeap() {
-        jTextArea2.setText(heap.toString());
+
+    private void indicarParaCurso() {
+        Trabalhador pessoa = queue.remove();
+        jTextArea2.setText("Trabalhador/ra: " + pessoa.getNome() + " com " + pessoa.getIdade() +
+                " Anos de idade!\nEsta indicado para um curso tecnico!");
+        jTextArea2.setCaretPosition(0);
+    }
+
+    private void mostrarQueue() {
+        jTextArea2.setText(queue.toString());
         jTextArea2.setCaretPosition(0);
     }
 

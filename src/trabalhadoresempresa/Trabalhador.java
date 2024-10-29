@@ -38,7 +38,6 @@ class Trabalhador implements Serializable, Comparable {
       if(inSexo=='F' || inSexo=='M') sexo = inSexo;
    }
 
-
   public String getNome() {
   	return nome;  //ou this.nome
   }

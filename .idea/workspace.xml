@@ -4,36 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ce82f48-d750-4fa7-97ca-8bd685b0004b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="3ce82f48-d750-4fa7-97ca-8bd685b0004b" name="Changes" comment="Finalização do sistema heap">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/built-jar.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/built-jar.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/.netbeans_automatic_build" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/.netbeans_update_resources" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/trabalhadoresempresa/AVL.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/trabalhadoresempresa/BinaryMinHeap.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/trabalhadoresempresa/NoAVL.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/trabalhadoresempresa/Principal$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/trabalhadoresempresa/Principal$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/trabalhadoresempresa/Principal$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/trabalhadoresempresa/Principal$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/trabalhadoresempresa/Principal$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/trabalhadoresempresa/Principal$6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/trabalhadoresempresa/Principal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/trabalhadoresempresa/Principal.form" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/trabalhadoresempresa/Trabalhador.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/trabalhadoresempresa/about.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/trabalhadoresempresa/error.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/trabalhadoresempresa/exit.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/trabalhadoresempresa/f1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/trabalhadoresempresa/f2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/trabalhadoresempresa/icon1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/trabalhadoresempresa/icon2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/trabalhadoresempresa/icon3.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/private/private.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/trabalhadoresempresa/BinaryMinHeap.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/trabalhadoresempresa/Principal.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/trabalhadoresempresa/Principal.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/trabalhadoresempresa/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/trabalhadoresempresa/Principal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/trabalhadoresempresa/Trabalhador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/trabalhadoresempresa/Trabalhador.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +45,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "org.rust.first.attach.projects": "true",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -96,11 +71,26 @@
       <workItem from="1713728850819" duration="8000" />
       <workItem from="1724949305408" duration="468000" />
       <workItem from="1729969711836" duration="32000" />
-      <workItem from="1730007744855" duration="2556000" />
+      <workItem from="1730007744855" duration="2663000" />
+      <workItem from="1730161590977" duration="132000" />
+      <workItem from="1730161735225" duration="2332000" />
     </task>
+    <task id="LOCAL-00001" summary="Finalização do sistema heap">
+      <option name="closed" value="true" />
+      <created>1730046404330</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1730046404330</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Finalização do sistema heap" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finalização do sistema heap" />
   </component>
 </project>

@@ -238,20 +238,19 @@ public class Principal extends javax.swing.JFrame {
     }
     
     public void mostraNaOrdem() {
-        String cad = "";
-        for(int i=0; i < femaleWorkers.size(); i++) {
-            cad += femaleWorkers.get(i).toString() + "\n";
-        }
+        String cad = listaGrafo.emOrdem();
         jTextArea2.setText(cad);
         jTextArea2.setCaretPosition(0);
     }
     
     public void mostraInverso() {
-        String cad = "";
-        for(int i=femaleWorkers.size()-1; i >= 0; i--) {
-            cad += femaleWorkers.get(i).toString() + "\n";
+        String invertedString = "";
+        String cad = listaGrafo.emOrdem();
+        String[] inversedcad = cad.split("\n");
+        for (int i=inversedcad.length-1; i>=0; i--) {
+            invertedString += inversedcad[i] + "\n";
         }
-        jTextArea2.setText(cad);
+        jTextArea2.setText(invertedString);
         jTextArea2.setCaretPosition(0);
     }
     

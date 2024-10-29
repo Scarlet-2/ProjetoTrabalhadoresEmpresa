@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ce82f48-d750-4fa7-97ca-8bd685b0004b" name="Changes" comment="Finalização do sistema heap">
+    <list default="true" id="3ce82f48-d750-4fa7-97ca-8bd685b0004b" name="Changes" comment="Finalização do sistema inverso">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/private/private.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/trabalhadoresempresa/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/trabalhadoresempresa/Principal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/trabalhadoresempresa/Trabalhador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/trabalhadoresempresa/Trabalhador.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +71,7 @@
       <workItem from="1729969711836" duration="32000" />
       <workItem from="1730007744855" duration="2663000" />
       <workItem from="1730161590977" duration="132000" />
-      <workItem from="1730161735225" duration="2332000" />
+      <workItem from="1730161735225" duration="2482000" />
     </task>
     <task id="LOCAL-00001" summary="Finalização do sistema heap">
       <option name="closed" value="true" />
@@ -83,7 +81,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730046404330</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Finalização do sistema inverso">
+      <option name="closed" value="true" />
+      <created>1730164130988</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1730164130988</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -91,6 +97,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Finalização do sistema heap" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finalização do sistema heap" />
+    <MESSAGE value="Finalização do sistema inverso" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finalização do sistema inverso" />
   </component>
 </project>
